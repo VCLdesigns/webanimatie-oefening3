@@ -4,35 +4,34 @@
   box-sizing: border-box;
 }
 body {
-  background-color: blanchedalmond;
+  background-color: #f8f7f3;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
 
 }
 #paneel {
-  background-color: lightblue;
   width: 200px;
   height: 200px;
   padding: 20px;
   position: fixed;
-  left: calc(100% - 200px);
-  transition: top 0.5s ease-out;
+  transition: right 0.5s linear;
+
 }
 #paneel_knop {
   width: 64px;
   height: 64px;
-  background-color: lightgreen;
   position: absolute;
-  bottom: -64px;
-  right: 0;
-  background-image: url(../img/menu.png);
-}
-.paneel_gesloten {
-  top: -200px;
-}
-.paneel_open {
+  left: -64px;
   top: 0;
 }
-#paneel .knop_open {
+.paneel_gesloten {
+  right: -200px;
+}
+.paneel_open {
+  right: 0;
+}
+ .paneel_open #paneel_knop{
   background-image: url(../img/close.png);
+}
+ .paneel_gesloten #paneel_knop{
+  background-image: url(../img/menu.png);
 }
