@@ -32,6 +32,6 @@ body {
 .paneelopen {
   top: 0;
 }
-.knopopen {
+#paneel .knopopen {
   background-image: url(../img/close.png);
 }
