@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Oefening 3</title>
 </head>
+
 <body>
-    
+    <div id="paneel" class="paneelgesloten">
+        <div id="paneelknop"></div>
+
+        <h2>(• ε •)</h2>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Quaerat, ducimus. Dolor, nemo.</p>
+        <p>Error, non fugiat optio.</p>
+    </div>
+    <script>
+        var knop = document.querySelector("#paneelknop");
+        var paneel = document.querySelector("#paneel");
+        knop.addEventListener("click", togglepaneel);
+
+        function togglepaneel(evt) {
+            paneel.classList.toggle("paneelopen");
+            knop.classList.toggle("knopopen")
+        }
+    </script>
 </body>
+
 </html>

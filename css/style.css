@@ -1,8 +1,37 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: blanchedalmond;
+body {
+  background-color: blanchedalmond;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#paneel {
+  background-color: lightblue;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  position: relative;
+  left: calc(100% - 200px);
+  transition: top 0.5s ease-out;
+}
+#paneelknop {
+  width: 64px;
+  height: 64px;
+  background-color: lightgreen;
+  position: absolute;
+  bottom: -64px;
+  right: 0;
+  background-image: url(../img/menu.png);
+}
+.paneelgesloten {
+  top: -200px;
+}
+.paneelopen {
+  top: 0;
+}
+.knopopen {
+  background-image: url(../img/close.png);
 }
