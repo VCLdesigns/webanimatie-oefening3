@@ -11,7 +11,7 @@
 
 <body>
     <div id="paneel" class="paneelgesloten">
-        <div id="paneelknop"></div>
+        <div id="paneel_knop"></div>
 
         <h2>(• ε •)</h2>
         <p>Lorem ipsum dolor sit.</p>
@@ -19,13 +19,13 @@
         <p>Error, non fugiat optio.</p>
     </div>
     <script>
-        var knop = document.querySelector("#paneelknop");
+        var knop = document.querySelector("#paneel_knop");
         var paneel = document.querySelector("#paneel");
-        knop.addEventListener("click", togglepaneel);
+        knop.addEventListener("click", toggle_paneel);
 
-        function togglepaneel(evt) {
-            paneel.classList.toggle("paneelopen");
-            knop.classList.toggle("knopopen")
+        function toggle_paneel(evt) {
+            paneel.classList.toggle("paneel_open");
+            knop.classList.toggle("knop_open")
         }
     </script>
 </body>

@@ -6,6 +6,7 @@
 body {
   background-color: blanchedalmond;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 
 }
 #paneel {
@@ -13,11 +14,11 @@ body {
   width: 200px;
   height: 200px;
   padding: 20px;
-  position: relative;
+  position: fixed;
   left: calc(100% - 200px);
   transition: top 0.5s ease-out;
 }
-#paneelknop {
+#paneel_knop {
   width: 64px;
   height: 64px;
   background-color: lightgreen;
@@ -26,12 +27,12 @@ body {
   right: 0;
   background-image: url(../img/menu.png);
 }
-.paneelgesloten {
+.paneel_gesloten {
   top: -200px;
 }
-.paneelopen {
+.paneel_open {
   top: 0;
 }
-#paneel .knopopen {
+#paneel .knop_open {
   background-image: url(../img/close.png);
 }
