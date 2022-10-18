@@ -10,22 +10,92 @@
 </head>
 
 <body>
-    <div id="paneel" class="paneel_gesloten">
-        <div id="paneel_knop"></div>
+    <header>
+        <nav>
+            <ul class="menu_hide">
+                <li><a href="#">Biography of</a></li>
+                <li><a href="#">O'sensei</a></li>
+                <li><a href="#">Morihei</a></li>
+                <li><a href="#">Ueshiba</a></li>
+                <li><a href="#">Founder of</a></li>
+                <li><a href="#">Aikido</a></li>
 
-        <h2>(• ε •)</h2>
-        <p>Lorem ipsum dolor sit.</p>
-        <p>Quaerat, ducimus. Dolor, nemo.</p>
-        <p>Error, non fugiat optio.</p>
-    </div>
+            </ul>
+            <div id="menu_button" title="Click Me!">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <img src="img/osensei.jpg" alt="Picture of O'sensie" title="O'sensei" width="244px" height="300px">
+        <h1> THE VICTORY IS YOURS</h1>
+        <p> There is a Buddhist saying which some attribute to the Buddha that I am fond of, "It is better to conquer
+            yourself than to win a thousand battles. Then the victory is yours." This saying is very much budo
+            inspiring.
+            Today, so much time is spent talking about what is "real" or true in the martial arts with practitioners on
+            both
+            sides claiming that their way is the best or only way.
+        </p>
+        <p>
+            Both arguments are hollow. The only true way is the way that one truly follows. All else is just talk and
+            babble
+            which distracts us from the real reality of actually following it. I am talking about actually living it as
+            best
+            we can.
+        </p>
+        <p>
+            The Way or do (道) as it is referred to in Japanese traditional arts may be interpreted as a path, but more
+            over
+            its is the direction by which one lives their life.
+        </p>
+        <p>
+            Following the Way is a doing thing which requires action not a talking thing which can easily be taken over
+            by
+            one's ego. The Spanish proverb, "Who knows most speaks least." is apropos to budo.
+        </p>
+        <p>
+            Shall we talk about it? Shall we even fight with each other about it? Both of those things distract us from
+            the
+            true battle which exists within.
+        </p>
+        <p>
+            Furuya Sensei used to say, "The Way is in training." Training is a doing thing. It takes so much focus and
+            concentration that any little distraction like spending time discussing or arguing about it only leads us
+            away
+            from the Way. Sensei didn't say the Way is in talking he said, "The Way is in training." Training is a doing
+            thing.
+        </p>
+        <p>
+            Don't get caught up in finger pointing or chest beating, none of which matters. Who is truly following the
+            Way
+            will be evident by their actions and not by what they say.
+        </p>
+        <p>
+            The one true way is the one that we follow in thought, speech and in action. Everything else is just a
+            distraction.</p>
+    </main>
+    <footer>
+     &copy;   Victor Loots, 2022
+    </footer>
     <script>
-        var knop = document.querySelector("#paneel_knop");
-        var paneel = document.querySelector("#paneel");
-        knop.addEventListener("click", toggle_paneel);
+        var menu_button = document.querySelector("#menu_button");
+        var ul = document.querySelector("nav ul");
 
-        function toggle_paneel(evt) {
-            paneel.classList.toggle("paneel_open");
+
+
+        menu_button.addEventListener("click", menu_toggle);
+
+        function menu_toggle(evt) {
+            ul.classList.toggle("menu_hide");
+            menu_button.classList.toggle("change");
+
         }
+
+
+
+
     </script>
 </body>
 
